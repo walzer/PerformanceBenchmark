@@ -75,5 +75,23 @@ while(i < N)
 
 ### Resource Utilization Comapre
 
-In production...
+This test is computing the memory consuming when adding 1000, 10000 and 100000 nodes in the scene.
 
+```
+N = 1000
+
+i = 0
+
+while(i < N)
+{
+	auto sprite = Sprite::create("HelloWorld.png");
+	addChile(sprite);
+	i++;
+}
+```
+
+|`iOS`        |1000        |10000           |100000      |
+|-------------|------------|----------------|------------|
+|JSB          |2.1  M      |11.8   M        |128.6  M    |
+|Lua          |0.7  M      |13.1   M        |118.6  M    |
+|C++          |1.2  M      |11.2   M        |91.1   M    |
