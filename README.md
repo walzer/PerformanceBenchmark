@@ -7,7 +7,7 @@ This document is a brief introduction of testing sample and performance standard
 This test is simply comparing the language performance by excuting `Loop`, `Callback` and `MAT4`. Take time consuming as the standard.
 
 ```cpp
-Loop:
+// Loop
 
 N = 1000;
 i = 0;
@@ -18,7 +18,7 @@ while(i < N)
 ```
 
 ```cpp
-Callback:
+// Callback
 
 N = 1000000;
 i = 0;
@@ -30,6 +30,8 @@ while(i < N)
 ```
 
 ```cpp
+// mat4
+
 N = 100000;
 i = 0;
 a = [...];
